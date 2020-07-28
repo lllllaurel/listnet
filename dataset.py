@@ -7,7 +7,7 @@ import numpy as np
 
 def load_random_data():
     # local generate
-    origin_metric = np.random.rand(20, 4)
+    origin_metric = np.random.rand(30, 4)
     x = origin_metric[:, :-1]
     y = origin_metric[:, -1].reshape(-1,1)
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3)
